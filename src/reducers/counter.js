@@ -5,6 +5,7 @@ const counterReducer = (state = 0, action) => {
         case 'DECREAMENT':
             return state - 1
         default:
+            return state;
     }
 };
 

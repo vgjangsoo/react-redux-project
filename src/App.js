@@ -13,7 +13,9 @@ function App() {
       <button onClick={() => dispatch(increment(1))}>+</button>
       <button onClick={() => dispatch(decrement(1))}>-</button>
       <br/>
-      <button onClick={() => dispatch(login())}>Login</button>
+      <button onClick={() => dispatch(login())}>
+        {isLogged ? 'Logout' : 'Login'}
+      </button>
       {isLogged ? <h3>Valuable information</h3> : ''}
     </div>
   );

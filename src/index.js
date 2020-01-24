@@ -3,9 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import { createStore } from 'redux';
 
 //STORE
+
+//ACTION
+const increment = () => {
+    return {
+        type: 'INCREMENT'
+    }
+}
+const decrement = () => {
+    return {
+        type: 'DECREMENT'
+    }
+}
+
+//REDUCER
+
+//DISPATCH
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
